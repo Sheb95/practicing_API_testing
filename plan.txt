@@ -1,0 +1,20 @@
+1. initialise npm
+2. install express 
+3. install jest as dev dependency 
+3. install supertest
+4. install cross-env
+
+// testing response
+    
+    // getting data
+        //create function that makes get request to kanyerest
+            //get and proccess  response
+
+    // create a test file
+        // import async function making getQuote function making a get request 
+        // create tests:
+            // test http code (if status is 200 (success))
+            // test response object if it contains a string
+// frontend
+    //displaying response
+
