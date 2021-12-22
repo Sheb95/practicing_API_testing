@@ -1,1 +1,3 @@
-# practicing_API_testing
+# Week 6 Day 3: Practicisng API testing
+
+Today at the School of Code bootcamp, we learned about testing API's with NPM packages "supertest "and "jest". We were taught how to rest an asynchronous function, as well as to check the types of responses and requests made to and by the server. However, one thing we did not do is try this with a live API. Thus, I and a fellow classmate will attempt to this evening practice what we have learned today and test the Kanye Rest API following Test Driven Development (TDD) principles. This project will be part of my teeny-weeny series where I try to implement what I have learned or struggle within a very small way. So, enjoy!
