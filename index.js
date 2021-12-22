@@ -6,8 +6,8 @@
 async function getQuote() {
     let response = await fetch("https://api.kanye.rest/");
     const data = await response.json()
-    console.log(data)
+    console.log(data.quote)
+    
     
 }
-
-console.log(getQuote())
+getQuote()
