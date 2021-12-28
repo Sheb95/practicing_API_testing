@@ -10,6 +10,7 @@ async function getQuote() {
     let response = await fetch("https://api.kanye.rest/");
     const data = await response.json()
     console.log(data.quote)    
+    h1.innerText = data.quote   
 }
 
-getQuote()
+button.addEventListener("click",getQuote)
