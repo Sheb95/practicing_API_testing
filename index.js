@@ -14,7 +14,7 @@ function addToList(quoteToAdd){
 }
 
 
-async function getQuote() {
+export default async function getQuote() {
     let response = await fetch("https://api.kanye.rest/");
     const data = await response.json();
     console.log(data.quote);
