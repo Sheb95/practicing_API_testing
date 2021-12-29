@@ -14,11 +14,11 @@ function addToList(quoteToAdd){
 }
 
 
-export default async function getQuote() {
+async function getQuote() {
     let response = await fetch("https://api.kanye.rest/");
     const data = await response.json();
     console.log(data.quote);
-    quote.innerText = data.quote;
+    quote.innerText = `"${data.quote}"`;
 
     if(listItems.includes(data.quote) === false){
         listItems.push(data.quote);

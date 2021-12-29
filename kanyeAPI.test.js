@@ -1,35 +1,40 @@
-import getQuote  from "./index.js";
-// import enableMocks from "jest-fetch-mock";
+import { getQuote2 }  from "./api.js";
 
-// enableMocks();
+// import {jest} from "@jest/globals";
 
-/**
- * @jest-environment jsdom
- */
+// tests for real http response (better to mock)
+test("should return quote", async() =>{
+    const result = await getQuote2();
+    expect(result).toEqual(expect.any(String));
+})
 
 
+//mocks response 
 
-// test("API response is as expected", async function (){
-//     // const actual = await getQuote2();
 
-//     const expected = {
-//         quote: expect.any(String)
-//     };
+// global.fetch = jest.fn(() =>
+//     Promise.resolve({
+//         json: () => Promise.resolve({quote : "string" })
+//     }));
 
-//     expect(await getQuote2()).toStrictEqual(expected);
+// beforeEach(() => {
+//     fetch.mockClear();
 // });
 
-it("API response is as expected", async () => {
-    fetch.mockResponseOnce(JSON.stringify({quote: expect.any(String)}));
 
-    const actual = await getQuote()
-    // console.log(actual);
 
-    const expected = {
-        quote: expect.any(String)
-    };
 
-    expect(actual).toStrictEqual(expected);
-    expect(fetch).toHaveBeenCalledTimes(1)
 
-})
+// it("gets a quote", async () => {
+    
+//     const actual = await getQuote2();
+//     // console.log(actual);
+
+//     const expected = 
+//         "string"
+//     ;
+
+//     expect(actual).toBe(expected);
+//     expect(fetch).toHaveBeenCalledTimes(1)
+
+// });
