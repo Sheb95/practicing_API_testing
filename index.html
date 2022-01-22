@@ -7,24 +7,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header id="heading" class="container">
+        <h1>Yeezy Quotes</h1>
+    </header>
     <main class="main-container">
-        <header id="heading" class="container">
-            <h1>Yeezy Quotes</h1>
-        </header>
-
-        <section id="kanye-image" class="container">
-           <img src="https://www.kindpng.com/picc/m/139-1391192_kanye-face-png-kanye-west-black-and-white.png">
-
-        </section>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div id="kanye-image" class="container flip-card-front">
+                    <img src="https://www.kindpng.com/picc/m/139-1391192_kanye-face-png-kanye-west-black-and-white.png">
+                </div>
+            <div class="flip-card-back" id="quote-history" >
+                <h2>Quote History</h2>
+                <ol id="kanye-quote-history"></ol>
+            </div>
+        </div>
+        </div>
 
         <section class="quote-section" class="container">
             <h2 id="kanye-quote">Click the button to generate quotes!<h2>
             <button>Click me!</button>
         </section>
 
-        <section id="quote-history" class="container">
-            <ol id="kanye-quote-history"></ol>
-        </section>
+    
 
        
         
